@@ -1,34 +1,51 @@
-# Project Title
+# Loan Qualifier Application
 
-This app was developed to help customers find bank loans that fit their needs.  The app also helps the bank determine if an applicant is in good standing to receive a loan based on their financial standing
+This is a python command-line interface application that allows users to see qualifying loans from lenders quickly and easily. The application works by taking in a `daily_rate_sheet` of loan criteria from various loan providers, asking the user a number of questions to evaluate their loan eligibility, and then returning to them a list of qualifying loans.
 
 ---
 
 ## Technologies
 
-This app is written in python code.  [In addition, the app also used fire] (https://github.com/google/python-fire#installation) [and questionary] (https://pypi.org/project/questionary/) to make it more user friendly.  
+This project leverages python 3.7 with the following packages:
 
+* [fire](https://github.com/google/python-fire) - For the command line interface, help page, and entrypoint.
+
+* [questionary](https://github.com/tmbo/questionary) - For interactive user prompts and dialogs
 
 ---
 
 ## Installation Guide
 
-In order to use this app, users must download ```pip install fire``` and
-```pip install questionary```
+Before running the application first install the following dependencies.
+
+```python
+  pip install fire
+  pip install questionary
+```
+
 ---
 
 ## Usage
 
-This section should include screenshots, code blocks, or animations explaining how to use your project.
+To use the loan qualifier application simply clone the repository and run the **app.py** with:
+
+```python
+python app.py
+```
+
+Upon launching the loan qualifier application you will be greeted with the following prompts.
+
+![Loan Qualifier Prompts](Images/loan_qalifier.png)
+
 
 ---
 
 ## Contributors
 
-In this section, list all the people who contribute to this project. You might want recruiters or potential collaborators to reach you, so include your contact email and, optionally, your LinkedIn or Twitter profile.
+Brought to you by ET Home Loans.
 
 ---
 
 ## License
 
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify what others can and can't with your source code and files. Use this section to include the license you want to use.
+MIT
